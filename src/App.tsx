@@ -3,9 +3,9 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import Message from "./Message";
 import ListGroup from './components/ListGroup';
+import Counts from './components/counts';
 
 function App() {
-  const [count, setCount] = useState(9)
 
   return (
     <div className="App"> 
@@ -20,14 +20,7 @@ function App() {
       <h1>Vite + React</h1>
       <div><Message></Message></div>
       <div><ListGroup></ListGroup></div>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
+      <div><Counts/></div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
